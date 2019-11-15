@@ -6,7 +6,7 @@ import { NextPage } from 'next';
 const Post: NextPage = () => {
 	const router = useRouter();
 	return (
-		<Layout>
+		<Layout title={`${router.query.id}`}>
 			<h1>{router.query.id}</h1>
 			<div className="markdown">
 				<Markdown

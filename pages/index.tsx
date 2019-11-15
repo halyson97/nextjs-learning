@@ -17,7 +17,7 @@ function getPosts() {
 }
 
 const Blog: NextPage<{posts: Array<Post>}> = ({ posts })=> (
-    <Layout>
+    <Layout title="Home">
         <h1>My Blog</h1>
         <ul>
           {posts.map(post => (
