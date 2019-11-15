@@ -17,8 +17,8 @@ module.exports = {
     };
     
 
-    getPosts().forEach(show => {
-      paths[`/p/${show.id}`] = { page: '/p/[id]', query: { id: show.id } };
+    getPosts().forEach(post => {
+      paths[`/posts/${post.id}`] = { page: '/posts/[id]', query: { id: post.id } };
     });
 
     return paths;
