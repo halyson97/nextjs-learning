@@ -1,1 +1,1 @@
-# nextjs-landingpage
+# nextjs-learning
