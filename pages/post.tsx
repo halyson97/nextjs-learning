@@ -1,7 +1,9 @@
 import { useRouter } from 'next/router';
 import Layout from '../components/MyLayout';
+import { NextPage } from 'next';
+import { FunctionComponent } from 'react';
 
-const Content = () => {
+const Content : FunctionComponent = () => {
   const router = useRouter();
   return (
     <>
@@ -11,7 +13,7 @@ const Content = () => {
   );
 };
 
-const Page = () => (
+const Page: NextPage = () => (
   <Layout>
     <Content />
   </Layout>
